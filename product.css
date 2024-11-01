@@ -1,0 +1,213 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  background-image: url(./assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product_content,
+.ficha_tecnica,
+.product_video {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product_image-and-title {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product_image-and-title figure {
+  display: flex;
+  gap: 7rem;
+  flex: 1 1 40%;
+  margin-right: 20px;
+  padding-left: 5rem;
+}
+
+.product_image-and-title img {
+  width: 30rem;
+  border-radius: 8px;
+}
+
+.product_image-and-title figcaption {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+  align-items: center;
+}
+
+.frete {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frete-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.frete label {
+  font-weight: bold;
+}
+
+.frete input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 180px;
+}
+
+.frete button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.frete button:hover {
+  background-color: #0056b3;
+}
+
+.informations-buy {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.discount {
+  font-size: 1.5rem;
+  color: #0156ff;
+}
+
+.prices_infos {
+  margin-top: 20px;
+}
+
+.prices_infos div {
+  margin-bottom: 10px;
+}
+
+.prices_infos h1 {
+  color: #0156ff;
+  font-size: 2rem;
+}
+
+.prices_infos .parcelamento {
+  font-size: 1rem;
+}
+
+.informations-buy button {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.informations-buy button:hover {
+  background-color: #218838;
+}
+
+.ficha_tecnica h2,
+.product_description h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.product_description p,
+.technical_specs ol {
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+.technical_specs ol li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.product_video video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  color: black;
+  font-size: 2rem;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.footer h2 {
+  font-size: 1.4rem;
+}
+
+.footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer ul li a i {
+  color: #a2a6b0;
+  font-size: 1.6rem;
+}
+
+.footer p {
+  color: #a2a6b0;
+  font-size: 1.2rem;
+}

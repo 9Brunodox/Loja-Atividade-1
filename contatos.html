@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - E-commerce</title>
+    <link rel="stylesheet" href="./contatos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Entre em Contato</h1>
+    </header>
+
+    <section class="contact-info">
+      <h2>Meios de Contato</h2>
+      <table>
+        <tr>
+          <th>Meio</th>
+          <th>Detalhes</th>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>suporte@exemplo.com</td>
+        </tr>
+        <tr>
+          <td>Telefone</td>
+          <td>(11) 1234-5678</td>
+        </tr>
+        <tr>
+          <td>WhatsApp</td>
+          <td>(11) 98765-4321</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contact-form">
+      <h2>Envie uma Mensagem ao Suporte</h2>
+      <form action="enviar_email.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="contact-preference">Preferência de Contato:</label>
+        <select id="contact-preference" name="contact-preference" required>
+          <option value="email">Email</option>
+          <option value="phone">Telefone</option>
+          <option value="whatsapp">WhatsApp</option>
+        </select>
+
+        <label for="attachment">Anexar Arquivo (opcional):</label>
+        <input
+          type="file"
+          id="attachment"
+          name="attachment"
+          accept=".jpg,.png,.pdf"
+        />
+
+        <label for="message">Descrição do Problema:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer body">
+        <ul>
+          <li>
+            <a id="instagram-link" href="" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a id="linkedin-link" href="" target="_blank">
+              <i id="linkedin-name" class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <h2 id="developer-info">Desenvolvido por:</h2>
+        <p>Copyright © 2024</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
